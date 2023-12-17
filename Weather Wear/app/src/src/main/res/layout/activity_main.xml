@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather Wear"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="34sp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/lastDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your last Weather Wear suggestion:"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/previousWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Weather: N/A"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/lastDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/previousClothes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clothes: N/A"
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_marginTop="50dp"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/previousWeather"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/startButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="310dp"
+        android:layout_height="70dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Start ➡"
+        android:textSize="18sp"
+        android:layout_marginTop="520dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleTextView"
+    />
+
+    <Button
+        android:id="@+id/clearButton"
+        style="@style/Widget.MaterialComponents.Button"
+        android:layout_width="310dp"
+        android:layout_height="40dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Clear Data"
+        android:textSize="18sp"
+        android:layout_marginTop="550dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/startButton"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
